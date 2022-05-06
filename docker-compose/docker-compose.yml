@@ -4,7 +4,7 @@ services: #컨테이너들 정의
     image: ghcr.io/shin3411/react_writing_app:0.1
     restart: "on-failure"
     ports:
-      - 3000:3000
+      - 80:80
     networks:
       - writing-service
 
