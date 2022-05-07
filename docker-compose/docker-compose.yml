@@ -1,7 +1,7 @@
 version: '3.8' # 버전을 정의, 옵션이라 없어도 무방 #적어도 2이상 https://docs.docker.com/compose/compose-file/compose-file-v3/
 services: #컨테이너들 정의
   frontend_server: #컨테이너 이름
-    image: ghcr.io/shin3411/react_writing_app:1.0
+    image: ghcr.io/shin3411/react_write_app:1.0
     restart: "on-failure"
     ports:
       - 80:80
@@ -9,7 +9,7 @@ services: #컨테이너들 정의
       - writing-service
 
   backend_server: #컨테이너 이름
-    image: ghcr.io/shin3411/node_writing_app:1.0
+    image: ghcr.io/shin3411/node_write_app:1.0
     restart: "on-failure"
     ports:
       - 5001:5001
